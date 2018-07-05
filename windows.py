@@ -65,8 +65,8 @@ class Browser:
 
     def import_members(self, emails):
         print('Attempting to import email addresses')
-        # input_xpath = "//input[@placeholder='Enter name or email address...']"
-        input_xpath = "//input[@placeholder='Ingresa un nombre o correo electrónico...']"
+        input_xpath = "//input[@placeholder='Enter name or email address...']"
+        # input_xpath = "//input[@placeholder='Ingresa un nombre o correo electrónico...']"
         add_members_field = self.browser.find_element_by_xpath(input_xpath)
         for email in emails:
             add_members_field.send_keys(email)
